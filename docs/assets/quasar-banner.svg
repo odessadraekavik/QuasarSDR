@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-labelledby="title desc">
+  <title id="title">QuasarSDR — L'essentiel du signal</title>
+  <desc id="desc">Identité orbitale cyan et ambre sur fond bleu nuit. Récepteur SDR multi-VFO en Rust pour Windows, réception uniquement.</desc>
+  <defs>
+    <linearGradient id="background" x2="1" y2="1">
+      <stop stop-color="#101e31"/><stop offset=".55" stop-color="#080d16"/><stop offset="1" stop-color="#10283a"/>
+    </linearGradient>
+    <radialGradient id="halo">
+      <stop stop-color="#35dbef" stop-opacity=".18"/><stop offset="1" stop-color="#35dbef" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="orbit" x1="0" y1="1" x2="1" y2="0">
+      <stop stop-color="#16879c"/><stop offset=".5" stop-color="#35dbef"/><stop offset="1" stop-color="#a2f4fa"/>
+    </linearGradient>
+    <linearGradient id="signal" x2="0" y2="1">
+      <stop stop-color="#35dbef" stop-opacity=".15"/><stop offset="1" stop-color="#35dbef" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#a1cfe8" stroke-opacity=".035"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="360" rx="18" fill="url(#background)"/>
+  <rect width="1280" height="360" rx="18" fill="url(#grid)"/>
+  <circle cx="195" cy="170" r="210" fill="url(#halo)"/>
+  <path d="M780 296 823 294 840 283 853 295 886 293 902 257 911 289 935 291 958 205 969 129 979 252 991 284 1024 291 1041 270 1054 293 1070 278 1083 202 1094 94 1106 250 1118 285 1132 272 1145 294 1194 290 1214 279 1231 295 1280 296V360H780Z" fill="url(#signal)"/>
+  <path d="M780 296 823 294 840 283 853 295 886 293 902 257 911 289 935 291 958 205 969 129 979 252 991 284 1024 291 1041 270 1054 293 1070 278 1083 202 1094 94 1106 250 1118 285 1132 272 1145 294 1194 290 1214 279 1231 295 1280 296" fill="none" stroke="#35dbef" stroke-opacity=".22" stroke-width="1.5"/>
+  <g transform="translate(182 164)">
+    <circle r="101" fill="none" stroke="#294658" stroke-width="1" stroke-dasharray="2 9"/>
+    <circle r="74" fill="#0d1b2b" stroke="url(#orbit)" stroke-width="3"/>
+    <circle r="56" fill="none" stroke="#234754" stroke-width="1"/>
+    <ellipse rx="114" ry="26" transform="rotate(-42)" fill="none" stroke="url(#orbit)" stroke-width="3.5"/>
+    <path d="M-107 96 106-95" stroke="#35dbef" stroke-width="2" stroke-linecap="round"/>
+    <circle r="27" fill="#ffcf7b" opacity=".07"/>
+    <circle r="16" fill="#ffcf7b" opacity=".13"/>
+    <circle r="8" fill="#ffcf7b"/>
+    <circle cx="78" cy="-70" r="4" fill="#adf7ff"/>
+  </g>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <text x="330" y="87" font-size="12" letter-spacing="4" fill="#8aabbf">SOFTWARE DEFINED RADIO</text>
+    <text x="325" y="177" font-size="86" font-weight="650" letter-spacing="3" fill="#e1eaf4">QUASAR<tspan fill="#ffcf7b" font-weight="300">SDR</tspan></text>
+    <text x="332" y="221" font-size="20" letter-spacing="3" fill="#8da8bf">L’ESSENTIEL DU SIGNAL.</text>
+    <g transform="translate(332 257)" font-size="11" letter-spacing="1.5" font-weight="600">
+      <rect width="165" height="31" rx="6" fill="#13273a" stroke="#2a4258"/>
+      <text x="16" y="20" fill="#b8cbdd">RUST / WINDOWS</text>
+      <rect x="178" width="121" height="31" rx="6" fill="#10313f" stroke="#205b6b"/>
+      <text x="194" y="20" fill="#35dbef">MULTI-VFO</text>
+      <rect x="312" width="108" height="31" rx="6" fill="#29271f" stroke="#665336"/>
+      <text x="330" y="20" fill="#ffcf7b">RX ONLY</text>
+    </g>
+    <text x="1186" y="49" text-anchor="end" font-size="10" letter-spacing="3" fill="#608399">TUNE INTO DETAIL</text>
+  </g>
+  <path d="M35 326H1245" stroke="#264256" stroke-opacity=".65"/>
+  <path d="M35 326H121" stroke="#35dbef" stroke-width="2"/>
+  <rect x=".5" y=".5" width="1279" height="359" rx="18" fill="none" stroke="#294254"/>
+</svg>
