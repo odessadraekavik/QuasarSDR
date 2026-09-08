@@ -1,9 +1,12 @@
 [package]
 name = "quasar-sdr"
 version = "0.1.0"
+# Édition du langage Rust, pas l'année du projet.
 edition = "2021"
 description = "Scanner SDR multi-VFO : base desktop Windows en Rust"
-license = "MIT"
+license = "GPL-3.0-only"
+repository = "https://github.com/odessadraekavik/QuasarSDR"
+readme = "README.md"
 
 [lib]
 name = "quasar_sdr"

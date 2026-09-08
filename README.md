@@ -41,6 +41,10 @@ reçue, puis choisissez l’écoute prioritaire ou le mixage.
 
 ## Première réception
 
+**[Télécharger la dernière NIGHTLY Windows x64](https://github.com/odessadraekavik/QuasarSDR/releases/tag/NIGHTLY)**
+— Décompressez le ZIP : `quasar-sdr.exe` et son dossier `drivers/` sont prêts à rester ensemble.
+Le pilote USB WinUSB reste nécessaire. Rust n’est requis que pour compiler depuis les sources.
+
 ### 1 · Préparer le matériel
 
 - **Windows x64**, Rust stable et Visual Studio Build Tools avec C++ / SDK Windows.
@@ -127,8 +131,10 @@ cargo build --release --locked
 ```
 
 Le workflow [Windows RX](https://github.com/odessadraekavik/QuasarSDR/actions/workflows/windows.yml)
-compile et vérifie le projet à chaque push. Ses exécutables nécessitent les DLL
-locales décrites dans le guide des drivers.
+compile et vérifie le projet à chaque push. Après validation sur `main`, il met à
+jour la release **NIGHTLY**, nommée `v<version>-dev.<AAAAMMJJ>` (date de Paris).
+Le ZIP inclut les DLL x64 de la distribution officielle RTL-SDR Blog V1.4.0,
+dont l’empreinte SHA-256 est vérifiée avant inclusion. Les pull requests ne publient pas de release.
 
 L’ancienne documentation complète est conservée dans
 [README technique — contexte de développement et IA](docs/README-technical.md) :
@@ -142,3 +148,5 @@ architecture détaillée, diagnostics matériels, paramètres DSP et limitations
   <strong>QUASAR SDR</strong><br>
   <sub>L’essentiel du signal. Toujours en réception.</sub>
 </p>
+
+Distribué sous [GNU GPL v3.0](LICENSE) · `GPL-3.0-only`.
